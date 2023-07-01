@@ -94,4 +94,14 @@ namespace ClassLibrary1
 }
 ```
 
+## Experience 
 
+**Support Specialist**
+*September 2020 - September 2022*
+
+ - quality control of electrical goods;
+ - data visualization;
+ - commodity analytics;
+ - work with waybills, consignment notes, and CMR;
+ - networking with the sales manager;
+ - organization of the warehouse;
