@@ -121,3 +121,7 @@ namespace ClassLibrary1
 
  May 2023 - June 2023
 
+## Languages
+- English - C1
+- Russian - C2
+- Polish - A2
