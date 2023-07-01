@@ -31,4 +31,67 @@ software.
 - .NUnit
 - .Net(C#)
 
+## Code examples
+``` C#
+namespace ClassLibrary1
+{
+    public static class TypeOfSequence
+    {
+        public static string? Name (long source)
+        {
+
+            if (source >= -9 && source <= 9)
+            {
+                return "One digit number.";
+            }
+            bool isIncreasing = true;
+            bool isDecreasing = true;
+            bool isStrictlyIncreasing = true;
+            bool isStrictlyDecreasing = true;
+            bool Monotonous = true;
+
+            long temp = source;
+            long previousCurrent = temp % 10;
+            temp /= 10;
+            do
+            {
+                long current = temp % 10;
+                isIncreasing &= (previousCurrent >= current);
+                isDecreasing &= (previousCurrent <= current);
+                isStrictlyIncreasing &= (previousCurrent > current);
+                isStrictlyDecreasing &= (previousCurrent < current);
+                Monotonous &= (previousCurrent == current);
+                previousCurrent = current;
+
+            } while ((temp /= 10) != 0);
+            
+            if (isIncreasing && isStrictlyIncreasing)
+            {
+                return "Strictly Increasing.";
+            }
+            if (isDecreasing && isIncreasing)
+            {
+                return "Monotonous";
+            }
+            if (isIncreasing && !isStrictlyIncreasing)
+            {
+                return "Increasing";
+            }
+            if (isDecreasing && isStrictlyDecreasing)
+            {
+                return "Strictly Decreasing.";
+            }
+            if (isDecreasing && !isStrictlyDecreasing)
+            {
+                return "Decreasing.";
+            }
+            
+            return "Unordered.";
+
+        }
+      
+    }
+}
+```
+
 
