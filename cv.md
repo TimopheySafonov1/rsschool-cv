@@ -1,7 +1,8 @@
 **Timophey Safonov**
-# _My Contact_
+My Contact
 ## +48793152384
 ## timophey.safonov@outlook.com
 ## Warsaw, Poland
+
 
 
