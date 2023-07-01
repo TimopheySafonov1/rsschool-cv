@@ -109,16 +109,15 @@ namespace ClassLibrary1
 
  ## Education
 
- **BelaBelarusian National Technical University**
+ **Belarusian National Technical University**
 
- *Bachelors in Power Engineering*
+ Bachelors in Power Engineering
 
  September 2022 - June 2023
 
  **Beetroot Academy**
 
- *QA MANUAL*
+ QA MANUAL
 
  May 2023 - June 2023
 
- 
