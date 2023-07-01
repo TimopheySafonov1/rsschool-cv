@@ -16,7 +16,19 @@ and have experience working closely with cross-functional
 teams to meet project requirements and deliver reliable
 software.
 
+## Skills
 
-
+- Manual testing of web applications
+- API testing
+- Mobile testing
+- Agile
+- HTML
+- CSS
+- API testing
+- SQL
+- Git
+- Linux
+- .NUnit
+- .Net(C#)
 
 
