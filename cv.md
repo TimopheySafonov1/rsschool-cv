@@ -97,6 +97,7 @@ namespace ClassLibrary1
 ## Experience 
 
 **Support Specialist**
+
 *September 2020 - September 2022*
 
  - quality control of electrical goods;
@@ -105,3 +106,19 @@ namespace ClassLibrary1
  - work with waybills, consignment notes, and CMR;
  - networking with the sales manager;
  - organization of the warehouse;
+
+ ## Education
+
+ **BelaBelarusian National Technical University**
+
+ *Bachelors in Power Engineering*
+
+ September 2022 - June 2023
+
+ **Beetroot Academy**
+
+ *QA MANUAL*
+
+ May 2023 - June 2023
+
+ 
