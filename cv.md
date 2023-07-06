@@ -107,19 +107,19 @@ namespace ClassLibrary1
  - networking with the sales manager;
  - organization of the warehouse;
 
- ## Education
+## Education
 
- **Belarusian National Technical University**
+**Belarusian National Technical University**
 
- Bachelors in Power Engineering
+Bachelors in Power Engineering
 
- September 2022 - June 2023
+September 2022 - June 2023
 
- **Beetroot Academy**
+**Beetroot Academy**
 
- QA MANUAL
+QA MANUAL
 
- May 2023 - June 2023
+May 2023 - June 2023
 
 ## Languages
 - English - C1
