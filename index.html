@@ -119,8 +119,7 @@
                     {
                         public static string? Name (long source)
                         {
-
-                            if (source &ge; -9 && source &le; 9)
+                            if (source &ge; -9 &amp;&amp; source &le; 9)
                             {
                                 return "One digit number.";
                             }
@@ -129,7 +128,6 @@
                             bool isStrictlyIncreasing = true;
                             bool isStrictlyDecreasing = true;
                             bool Monotonous = true;
-
                             long temp = source;
                             long previousCurrent = temp % 10;
                             temp /= 10;
@@ -142,9 +140,7 @@
                                 isStrictlyDecreasing &amp;= (previousCurrent &gt; current);
                                 Monotonous &amp;= (previousCurrent == current);
                                 previousCurrent = current;
-
                             } while ((temp /= 10) != 0);
-                            
                             if (isIncreasing &amp;&amp; isStrictlyIncreasing)
                             {
                                 return "Strictly Increasing.";
