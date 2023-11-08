@@ -136,40 +136,37 @@
                             do
                             {
                                 long current = temp % 10;
-                                isIncreasing &= (previousCurrent &ge; current);
-                                isDecreasing &= (previousCurrent &le; current);
-                                isStrictlyIncreasing &= (previousCurrent &lt; current);
-                                isStrictlyDecreasing &= (previousCurrent &gt; current);
-                                Monotonous &= (previousCurrent == current);
+                                isIncreasing &amp;= (previousCurrent &ge; current);
+                                isDecreasing &amp;= (previousCurrent &le; current);
+                                isStrictlyIncreasing &amp;= (previousCurrent &lt; current);
+                                isStrictlyDecreasing &amp;= (previousCurrent &gt; current);
+                                Monotonous &amp;= (previousCurrent == current);
                                 previousCurrent = current;
 
                             } while ((temp /= 10) != 0);
                             
-                            if (isIncreasing && isStrictlyIncreasing)
+                            if (isIncreasing &amp;&amp; isStrictlyIncreasing)
                             {
                                 return "Strictly Increasing.";
                             }
-                            if (isDecreasing && isIncreasing)
+                            if (isDecreasing &amp;&amp; isIncreasing)
                             {
                                 return "Monotonous";
                             }
-                            if (isIncreasing && !isStrictlyIncreasing)
+                            if (isIncreasing &amp;&amp; !isStrictlyIncreasing)
                             {
                                 return "Increasing";
                             }
-                            if (isDecreasing && isStrictlyDecreasing)
+                            if (isDecreasing &amp;&amp; isStrictlyDecreasing)
                             {
                                 return "Strictly Decreasing.";
                             }
-                            if (isDecreasing && !isStrictlyDecreasing)
+                            if (isDecreasing &amp;&amp; !isStrictlyDecreasing)
                             {
                                 return "Decreasing.";
                             }
-                            
                             return "Unordered.";
-
                         }
-                    
                     }
                 }
             </code></pre>
