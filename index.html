@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="menu">
+                <li><a href="#skills" class="skills">Skills</a></li>
+                <li><a href="#education" class="educational-background">Educational background</a></li>
+                <li><a href="#code-div" class="code-body">Code example</a></li>
+                <li><a href="#tools" class="tools-list">Tools</a></li>
+                <li><a href="#contact-link" class="big">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-container">
+            <div class="column">
+                <div class="circle-container">
+                    <img src="TImopheySafonov.jpg" alt="Personal photo" class="profile-photo">
+                </div>
+                <div class="text-container">
+                    <p id="job-title">TIMOPHEY SAFONOV</p>
+                    <p class="job-description">QA ENGINEER</p>
+                </div>
+            </div>
+            <div class="column" id="skills">
+                <h2 class="skills">Skills</h2>
+                <ul class="list-of-skills">
+                    <li>Manual testing of web applications</li>
+                    <li>API testing</li>
+                    <li>Mobile testing</li>
+                    <li>Scrum</li>
+                    <li>Kanban</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>API testing</li>
+                    <li>SQL</li>
+                    <li>Git</li>
+                    <li>Linux</li>
+                    <li>.NUnit</li>
+                    <li>.Net(C#)</li>
+                    <li>CRM</li>
+                    <li>1C</li>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                    <li>Leadership</li>
+                    <li>Problem-solving</li>
+                    <li>Teambuilding</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2 class="about-me">About me</h2>
+                <p class="summary"> As a QA engineer, I have developed strong testing skills,
+                    attention to detail, and collaboration abilities to ensure high quality software through test planning, execution, and defect
+                    reporting. I am proficient in various testing methodologies
+                    and have experience working closely with cross-functional
+                    teams to meet project requirements and deliver reliable
+                    software.
+                </p>
+                <h2 class="experience">Experience</h2>
+                    <p class="job">SUPPORT SPECIALIST</p>
+                    <p class="period">September 2020 - September 2022</p>
+                    <ul class="key-responsi">
+                        <li>quality control of electrical goods;</li>
+                        <li>data visualization;</li>
+                        <li>commodity analytics;</li>
+                        <li>work with waybills, consignment notes, and CMR;</li>
+                        <li>networking with the sales manager;</li>
+                        <li>organization of the warehouse;</li>
+                    </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="main-column" id="education">
+                <h1 class="educational-background">Educational background</h1>
+                    <h2>Belarusian National Technical University</h2>
+                        <p>Bachelor in Power Engineering</p>
+                            <p>Completed in June 2022</p>
+                    <h2>Beetroot Academy</h2>
+                        <p>QA Manual</p>
+                            <p>May 2023 - June 2023</p>
+            </div>
+            <div class="main-column" id="tools">
+                <h2>Languages</h2>
+                    <ul>
+                        <li>Englsih - C1</li>
+                        <li>Russian - C2</li>
+                        <li>Polish -  A2</li>
+                    </ul>
+                <h2>Tools</h2>
+                    <ul class="tools-list">
+                        <li>Jira</li>
+                        <li>TestRail</li>
+                        <li>Postman</li>
+                        <li>Android Studio</li>
+                        <li>SoapUI</li>
+                        <li>MySQL</li>
+                        <li>JMeter</li>
+                        <li>Visual Studio</li>
+                        <li>Ms Office</li>
+                        <li>RIder</li>
+                    </ul>
+            </div>
+        </div>
+        <div class="code" id="code-div">
+            <h2 class="code-example">Code example</h2>
+            <pre><code class="code-body">
+                namespace ClassLibrary1
+                {
+                    public static class TypeOfSequence
+                    {
+                        public static string? Name (long source)
+                        {
+                            if (source &ge; -9 &amp;&amp; source &le; 9)
+                            {
+                                return "One digit number.";
+                            }
+                            bool isIncreasing = true;
+                            bool isDecreasing = true;
+                            bool isStrictlyIncreasing = true;
+                            bool isStrictlyDecreasing = true;
+                            bool Monotonous = true;
+                            long temp = source;
+                            long previousCurrent = temp % 10;
+                            temp /= 10;
+                            do
+                            {
+                                long current = temp % 10;
+                                isIncreasing &amp;= (previousCurrent &ge; current);
+                                isDecreasing &amp;= (previousCurrent &le; current);
+                                isStrictlyIncreasing &amp;= (previousCurrent &lt; current);
+                                isStrictlyDecreasing &amp;= (previousCurrent &gt; current);
+                                Monotonous &amp;= (previousCurrent == current);
+                                previousCurrent = current;
+                            } while ((temp /= 10) != 0);
+                            if (isIncreasing &amp;&amp; isStrictlyIncreasing)
+                            {
+                                return "Strictly Increasing.";
+                            }
+                            if (isDecreasing &amp;&amp; isIncreasing)
+                            {
+                                return "Monotonous";
+                            }
+                            if (isIncreasing &amp;&amp; !isStrictlyIncreasing)
+                            {
+                                return "Increasing";
+                            }
+                            if (isDecreasing &amp;&amp; isStrictlyDecreasing)
+                            {
+                                return "Strictly Decreasing.";
+                            }
+                            if (isDecreasing &amp;&amp; !isStrictlyDecreasing)
+                            {
+                                return "Decreasing.";
+                            }
+                            return "Unordered.";
+                        }
+                    }
+                }
+            </code></pre>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="main-column-footer">
+                <a href="https://rs.school/js/" target="_blank">
+                    <img src="https://rs.school/images/rs_school_js.svg" alt="RS School Logo">
+                </a>
+                <p class="year">2023</p>
+            </div>
+            <div class="main-column-footer" id="contact-link">
+                <h2 class="big">My contact information</h2>
+                <p class="contact">
+                    timophey.safonov@outlook.com
+                    <br>
+                    +48 793 152 384
+                    <br>
+                    Warsawa, Poland
+                    <br>
+                    <a href="https://github.com/timopheySafonov1" target="_blank">https://github.com/timopheySafonov1</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
